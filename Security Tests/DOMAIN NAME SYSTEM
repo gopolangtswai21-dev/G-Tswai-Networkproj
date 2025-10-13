@@ -1,0 +1,9 @@
+PC: Use the same PC in VLAN 40.
+
+Tool: Open the Command Prompt.
+
+Command: Try to resolve the domain name:
+
+nslookup mycompany.com
+Expected Result (SUCCESS): The nslookup command should FAIL or time out.
+Conclusion: This confirms the ACL is blocking UDP port 53 traffic as well, as expected for a comprehensive deny ip rule.
