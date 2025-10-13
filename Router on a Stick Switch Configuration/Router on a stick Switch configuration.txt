@@ -1,0 +1,46 @@
+enable
+configure terminal
+
+! Create VLANs
+vlan 10
+ name DATA
+exit
+vlan 20
+ name VOICE
+exit
+vlan 30
+ name IT
+exit
+
+! Example: assign PC ports
+! (adjust Fa0/1..Fa0/3 to real ports for VLAN10)
+interface range FastEthernet0/1 - 3
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+exit
+
+! VLAN20 ports (adjust)
+interface range FastEthernet0/4 - 6
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree portfast
+exit
+
+! VLAN30 ports (adjust)
+interface range FastEthernet0/7 - 9
+ switchport mode access
+ switchport access vlan 30
+ spanning-tree portfast
+exit
+
+! Trunk to router (example Fa0/24)
+interface FastEthernet0/24
+ switchport trunk encapsulation dot1q    ! may be optional in PT
+ switchport mode trunk
+ switchport trunk native 1               ! optional; avoid using native VLAN for project
+ switchport trunk allowed vlan 10,20,30
+ no shutdown
+exit
+
+write memory
