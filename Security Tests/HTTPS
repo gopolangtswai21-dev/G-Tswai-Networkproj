@@ -1,0 +1,10 @@
+PC: Use the same PC in VLAN 40.
+
+Tool: Open the Web Browser (Desktop → Web Browser).
+
+URL: Try to access the server by IP:
+
+192.168.90.2
+Since the ACL is configured, it is correctly blocking the TCP protocol (Layer 4/Application) traffic like HTTP
+Expected Result (SUCCESS): The browser must FAIL to load the page (it will time out).
+
