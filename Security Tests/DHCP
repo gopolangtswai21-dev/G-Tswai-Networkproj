@@ -1,0 +1,29 @@
+Core-SW-14 DHCP Configuration
+=============================
+
+OVERVIEW:
+- DHCP service for multiple VLANs
+- Security features: DHCP snooping
+- Department-specific configurations
+
+VLAN MAPPING:
+- VLAN 10: Sales Department
+- VLAN 20: Marketing Department  
+- VLAN 30: Operations Department
+- VLAN 40: IT Department
+- VLAN 90: Server Network
+
+EXCLUDED ADDRESS RANGES:
+- Gateways: .254 addresses
+- Servers: .1-.10 addresses in each VLAN
+- Static assignments reserved
+
+LEASE DURATIONS:
+- Sales/Marketing/Operations: 7 days
+- IT Department: 3 days
+- Server VLAN: 1 day
+
+SECURITY FEATURES:
+- DHCP snooping enabled
+- Trusted ports configured
+- Rogue DHCP server protection
