@@ -1,0 +1,16 @@
+Negative Testing (Verify the Block)
+This test confirms that your security rule is successfully blocking traffic from the restricted VLAN (VLAN 40) to the Server.
+
+Test from a PC in VLAN 40 (IT-Admin)
+Check L3 Connectivity (Ping/ICMP)
+
+PC: Select a PC in VLAN 40.
+
+Tool: Open the Command Prompt (Desktop → Command Prompt).
+
+Command: Ping the Server's IP address:
+
+ping 192.168.90.2
+Expected Result (SUCCESS): The ping must FAIL. You should see Request timed out or Destination Host Unreachable.
+
+Conclusion: If the ping fails, the ACL is correctly blocking the ICMP protocol (Layer 3).
