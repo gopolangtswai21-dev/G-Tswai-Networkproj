@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="EXTENDED STAR PNG" src="https://github.com/user-attachments/assets/270b92c5-fd32-42ef-ba8d-840a0f98064a" /># G-Tswai-Networkproj
+
 Cisco Packet Tracer project demonstrating bus, mesh, star, ring, extended star, and hybrid topologies with IPv4/IPv6, VLANs, servers, and security.
 A — BUS (Central Switch = 2960, PCs = 4)
 
