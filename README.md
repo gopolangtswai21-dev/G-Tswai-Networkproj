@@ -1,4 +1,4 @@
-# G-Tswai-Networkproj
+<img width="1920" height="1200" alt="EXTENDED STAR PNG" src="https://github.com/user-attachments/assets/270b92c5-fd32-42ef-ba8d-840a0f98064a" /># G-Tswai-Networkproj
 Cisco Packet Tracer project demonstrating bus, mesh, star, ring, extended star, and hybrid topologies with IPv4/IPv6, VLANs, servers, and security.
 A — BUS (Central Switch = 2960, PCs = 4)
 
@@ -7,7 +7,6 @@ IPv4 range: 192.168.1.1 – 192.168.1.4
 IPv6 range provided: 2001:DB8:1::2 – 2001:DB8:1::7 (I assigned the first 4 IPv6 addrs to the 4 PCs)
 
 | Device | Interface | IPv4 Address | Subnet Mask | IPv4 Gateway | IPv6 Address | IPv6 Prefix | IPv6 Gateway |
-<img width="1920" height="1200" alt="BUS PNG" src="https://github.com/user-attachments/assets/65e37263-f6d1-4c17-a81d-90edec862c5a" />
 
 
 | ------ | --------- | -----------: | ------------: | ------------: | ------------- | ----------: | ------------------------------------: |
@@ -19,6 +18,8 @@ IPv6 range provided: 2001:DB8:1::2 – 2001:DB8:1::7 (I assigned the first 4 IPv
 | PC3 | NIC | 192.168.1.3 | 255.255.255.0 | 192.168.1.254 | 2001:DB8:1::4 | /64 | 2001:DB8:1::1 |
 
 | PC4 | NIC | 192.168.1.4 | 255.255.255.0 | 192.168.1.254 | 2001:DB8:1::5 | /64 | 2001:DB8:1::1 |
+
+
 
 B — MESH (Central Switch = 2960, PCs = 6)
 Router-on-a-Stick Configuration — VLAN 10 | 20 | 30
