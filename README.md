@@ -7,6 +7,8 @@ IPv4 range: 192.168.1.1 – 192.168.1.4
 IPv6 range provided: 2001:DB8:1::2 – 2001:DB8:1::7 (I assigned the first 4 IPv6 addrs to the 4 PCs)
 
 | Device | Interface | IPv4 Address | Subnet Mask | IPv4 Gateway | IPv6 Address | IPv6 Prefix | IPv6 Gateway |
+<img width="1920" height="1200" alt="BUS PNG" src="https://github.com/user-attachments/assets/65e37263-f6d1-4c17-a81d-90edec862c5a" />
+
 
 | ------ | --------- | -----------: | ------------: | ------------: | ------------- | ----------: | ------------------------------------: |
 
